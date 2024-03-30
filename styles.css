@@ -24,6 +24,19 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+input {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -61,7 +74,8 @@ body {
     min-height: 100vh;
 }
 
-.sidebar {
+/* SIDEBAR */
+.dashboard-sidebar {
     grid-row: 1 / span 2;
 }
 
@@ -73,14 +87,52 @@ body {
 
     margin-bottom: 15px;
 }
+
+/* HEADER */
+.dashboard-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.dashboard-header > div:first-child {
+    display: grid;
+    grid-template-columns: 20px auto;
+}
+
+.dashboard-header > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.dashboard-header > div:nth-child(3) {
+    display: flex;
+    gap: 10px;
+}
+
+.dashboard-header > nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-header-gap {
+    gap: 15px;
+    align-items: center;
+}
+
 /* ---------------------------------------------------- */
 
 /* --------------------- STYLING ---------------------- */
 body {
     font-family: montserrat, system-ui;
+
+    background-color:rgb(216, 222, 230);
 }
 
-.sidebar {
+/* SIDEBAR */
+.dashboard-sidebar {
     color: rgb(248, 235, 212);
 }
 
@@ -88,7 +140,7 @@ body {
     font-size: 2.5rem;
 }
 
-.sidebar {
+.dashboard-sidebar {
     background-color: rgb(17, 141, 235);
 
     padding: 15px;
@@ -99,5 +151,38 @@ body {
 
 .sidebar-item-margin-bottom {
     margin-bottom: 40px;
+}
+
+/* HEADER */
+.dashboard-header {
+    padding: 20px 60px 20px 20px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    background: rgb(251, 250, 247);
+}
+
+.dashboard-header input[type="search"] {
+    background-color: rgb(216, 222, 230);
+
+    width: 100%;
+
+    padding: 0.4rem;
+
+    border-radius: 12px;
+}
+
+.dashboard-header > nav a {
+    border-style: none;
+    border-radius: 20px;
+
+    background-color: rgb(17, 141, 235);
+
+    color: rgb(248, 235, 212);
+
+    padding: 10px;
+
+    text-align: center;
 }
 /* ---------------------------------------------------- */

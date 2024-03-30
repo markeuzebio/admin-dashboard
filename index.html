@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="dashboard-sidebar">
         <div class="sidebar-row sidebar-item-margin-bottom">
             <img src="icons/dashboard-icon.png" alt="Dashboard icon" width="40px">
             <h1>Dashboard</h1>
@@ -49,12 +49,30 @@
         </div>
     </aside>
 
-    <header>
-        
-    </header>
-
     <main>
-
+        <header class="dashboard-header dashboard-header-gap">
+            <div class="dashboard-header-gap">
+                <label for="header-search"><img src="icons/search-icon.png" alt="Search icon" width="20px"></label>
+                <input id="header-search" type="search" maxlength="100">
+            </div>
+            <div class="dashboard-header-gap">
+                <a href="" noopener noreferrer><img src="icons/bell-icon.png" alt="Bell icon" width="20px"></a>
+                <img src="icons/deer-icon.png" alt="User's icon" width="35px">
+                MARCOS EUZEBIO
+            </div>
+            <div class="dashboard-header-gap">
+                <img src="icons/deer-icon.png" alt="User's icon">
+                <div>
+                    <p>Hi there,</p>
+                    <p style="font-size: 2rem;">Marcos Euzebio (@markolumn)</p>
+                </div>
+            </div>
+            <nav class="dashboard-header-gap">
+                  <a href="" noopener noreferrer>New</a>
+                  <a href="" noopener noreferrer>Upload</a>
+                  <a href="" noopener noreferrer>Share</a>
+            </nav>
+        </header>
     </main>
 </body>
 </html>

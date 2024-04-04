@@ -122,6 +122,26 @@ body {
     align-items: center;
 }
 
+/* ARTICLE */
+.dashboard-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2rem;
+    gap: 15px;
+}
+
+.dashboard-article > h2 {
+    grid-column: span 2;
+}
+
+.article-aside {
+    grid-row: 1 / 5;
+    grid-column: 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 /* ---------------------------------------------------- */
 
 /* --------------------- STYLING ---------------------- */
@@ -153,6 +173,32 @@ body {
     margin-bottom: 40px;
 }
 
+.article-aside-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article-aside-card:last-of-type > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card-bottom {
+    display: flex;
+    gap: 20px;
+    height: auto;
+
+    margin-top: auto;
+    align-self: flex-end;
+}
+
 /* HEADER */
 .dashboard-header {
     padding: 20px 60px 20px 20px;
@@ -161,6 +207,8 @@ body {
     font-weight: bold;
 
     background: rgb(251, 250, 247);
+
+    box-shadow: 0px 5px 3px rgb(161, 163, 167);
 }
 
 .dashboard-header input[type="search"] {
@@ -184,5 +232,48 @@ body {
     padding: 10px;
 
     text-align: center;
+}
+
+/* ARTICLE */
+.dashboard-article {
+    padding: 20px 60px 0px 20px;
+}
+
+.dashboard-article h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dashboard-article h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.article-card {
+    background-color: rgb(251, 250, 247);
+
+    border-left: 5px solid burlywood;
+    border-radius: 6px;
+
+    padding: 20px;
+
+    box-shadow: 0px 5px 3px rgb(161, 163, 167);
+}
+
+.article-aside-card {
+    padding: 20px 20px 20px 20px;
+
+    background-color: rgb(251, 250, 247);
+
+    border-radius: 6px;
+
+    box-shadow: 0px 5px 3px rgb(161, 163, 167);
+}
+
+.article-aside-card:first-of-type > div:nth-child(2) {
+    padding: 10px 0px;
+
+    border-top: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
 }
 /* ---------------------------------------------------- */
